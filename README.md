@@ -34,7 +34,7 @@ Specify the machine learning algorithms you intend to explore for solving the ch
     -	The team had thought about incorporating the KNN  algorithm, but it isn’t decided yet due to its, in contrast, high computational cost.
   
 ## Part 2
-Deliver a 5-min demo that includes:
+- Deliver a 5-min demo that includes:
     - Project overview
     - Data preprocessing steps and any challenges encountered.
     - Preliminary results and any insights gained from the data analysis.

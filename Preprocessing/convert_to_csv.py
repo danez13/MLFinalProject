@@ -30,7 +30,7 @@ column names have been reduced for convenience
     - unit number, time, in cycles, operation setting 1, operation setting 2, operational setting 3, sensor measurement 1, sensor measurement 2, sensor measurement 3, sensor measurement 4, sensor measurement 5, sensor measurement 6, sensor measurement 7, sensor measurement 8, sensor measurement 9, sensor measurement 10, sensor measurement 11, sensor measurement 12, sensor measurement 13, sensor measurement 14, sensor measurement 15, sensor measurement 16, sensor measurement 17, sensor measurement 18, sensor measurement 19, sensor measurement 20, sensor measurement 21
 """
 # column names for the next two file categories
-column_names = ["ID", "cycle", "os_1", "os_2", "os_3", "s_1", "s_2", "s_3", "s_4", "s_5", "s_6", "s_7", "s_8", "s_9", "s_10", "s_11", "s_12", "s_13", "s_14", "s_15", "s_16","s_17","s_18","s_19","s_20","_21"]
+column_names = ["ID", "cycle", "op_setting_1", "op_setting_2", "op_setting_3", "s_1", "s_2", "s_3", "s_4", "s_5", "s_6", "s_7", "s_8", "s_9", "s_10", "s_11", "s_12", "s_13", "s_14", "s_15", "s_16","s_17","s_18","s_19","s_20","_21"]
 
 # process test files into CSV
 for file_name in test_files:

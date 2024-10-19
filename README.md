@@ -44,8 +44,11 @@ Specify the machine learning algorithms you intend to explore for solving the ch
 create a power point of the following
 1. write a project overview
 2. download data and perform data preprocessing
+    - write down any challanges found encountered 
 3. analyze the data to gain any insights
+    - write down any challanges found encountered
 4. run initial test with the chosen model
+    - write down any challanges found encountered
 5. write down steps to finalize the project, including improvements, and refinements
 
 ## Citations

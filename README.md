@@ -51,5 +51,11 @@ create a power point of the following
     - write down any challanges found encountered
 5. write down steps to finalize the project, including improvements, and refinements
 
+**Challanges**
+- preprocessing
+    - dataset carried less columns than stated in the dataset description
+        - dataset description originally stated the dataset to have 26 different sensor measurements, but in reality had only 21 sensor measurements
+    - dataset was not meant for classification, a column for class was required to be added
+
 ## Citations
 A. Saxena and K. Goebel (2008). “Turbofan Engine Degradation Simulation Data Set”, NASA Prognostics Data Repository, NASA Ames Research Center, Moffett Field, CA

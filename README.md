@@ -1,9 +1,9 @@
 # MLFinalProject
 ## How to use
-For easy use of the code, follow the following steps
+For easy use of the code, follow the following steps:
 - Data Preprocessing
-    - run Data_Preprocessing.py
-        - runs the following: 
+    1. run Data_Preprocessing.py
+        - the script runs: 
             - convert_to_csv.py
             - generate_classificaiton_targets.py
             - normalize_data.py 

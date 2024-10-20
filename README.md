@@ -1,5 +1,16 @@
 # MLFinalProject
-## Part 1
+## How to use
+For easy use of the code, follow the following steps
+- Data Preprocessing
+    - run Data_Preprocessing.py
+        - runs the following: 
+            - convert_to_csv.py
+            - generate_classificaiton_targets.py
+            - normalize_data.py 
+
+For more advance use of the code run files individually
+## Project Parts
+### Part 1
 **Objective**: The Project Proposal is the first milestone in your final project journey. Its purpose is to provide a clear and concise outline of the machine learning problem or application you intend to explore. This milestone sets the foundation for your final project and requires you to articulate the significance of the chosen problem, describe the dataset you plan to use, and specify the machine learning algorithms you intend to explore.
 
 **Tasks**:
@@ -33,7 +44,7 @@ Specify the machine learning algorithms you intend to explore for solving the ch
     -	Additionally, SVM has different kernels, which make it possible for handling the higher dimensional data. 
     -	The team had thought about incorporating the KNN  algorithm, but it isn’t decided yet due to its, in contrast, high computational cost.
   
-## Part 2
+### Part 2
 - Deliver a 5-min demo that includes:
     - Project overview
     - Data preprocessing steps and any challenges encountered.
@@ -41,21 +52,23 @@ Specify the machine learning algorithms you intend to explore for solving the ch
     - Plan for finalizing the project, including potential refinements and improvements.
 
 **Tasks**:
-create a power point of the following
+create a power point of the following:
 1. write a project overview
-2. download data and perform data preprocessing
-    - write down any challanges found encountered 
+2. ~~download data and perform data preprocessing~~
+    - write down any challanges found/encountered 
 3. analyze the data to gain any insights
-    - write down any challanges found encountered
+    - write down any challanges found/encountered
 4. run initial test with the chosen model
-    - write down any challanges found encountered
+    - write down any challanges found/encountered
 5. write down steps to finalize the project, including improvements, and refinements
 
-**Challanges**
+**Challenges**
 - preprocessing
     - dataset carried less columns than stated in the dataset description
         - dataset description originally stated the dataset to have 26 different sensor measurements, but in reality had only 21 sensor measurements
     - dataset was not meant for classification, a column for class was required to be added
+    - dataset required to be normalized
+        - this was solved by using the mean and the standard deviation
 
 ## Citations
 A. Saxena and K. Goebel (2008). “Turbofan Engine Degradation Simulation Data Set”, NASA Prognostics Data Repository, NASA Ames Research Center, Moffett Field, CA

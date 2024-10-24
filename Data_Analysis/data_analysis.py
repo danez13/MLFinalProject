@@ -1,8 +1,6 @@
 import os
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 # get sensor line graph
 def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None|list = None):

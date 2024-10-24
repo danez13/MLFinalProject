@@ -1,12 +1,17 @@
 # MLFinalProject
 ## How to use
 For easy use of the code, follow the following steps
-- Data Preprocessing
-    - run Data_Preprocessing.py
+- Data Preprocessing:
+    - run Data_Processing/Data_Preprocessing.py
         - runs the following: 
             - convert_to_csv.py
             - generate_classificaiton_targets.py
-            - normalize_data.py 
+            - normalize_data.py
+- Data Analysis:
+    - run data_analysis.py
+        - creates line graphs for sensors for engines
+    - follow the terminal prompt instructions
+
 
 For more advance use of the code run files individually
 ## Project Parts

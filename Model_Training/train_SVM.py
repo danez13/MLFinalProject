@@ -17,7 +17,14 @@ kernels = ['linear','poly','rbf','sigmoid','precomputed']
 model = SVC(C=1,kernel="poly")
 model.fit(X_train, np.ravel(y_train))
 
+print(f"Model weight w0: {model.intercept_}")
+
+print(f"Model weight w1 and w2: {model.coef0}")#type: ignore
+
+print(f"confidence scores: {model.decision_function(X_train)}")
+
 y_pred = model.predict(X_test)
 
-accuracy_default = accuracy_score(y_test, y_pred)
-print(f"Default Model Accuracy: {accuracy_default:.2f}",end="\n\n")
+score = model.score(X_test,np.ravel(y_test))
+print(f"accuracy score: {score}")
+

@@ -61,7 +61,7 @@ create a power point of the following:
 1. write a project overview
 2. ~~download data and perform data preprocessing~~
     - write down any challanges found/encountered 
-3. analyze the data to gain any insights
+3. ~~analyze the data to gain any insights~~
     - write down any challanges found/encountered
 4. run initial test with the chosen model
     - write down any challanges found/encountered
@@ -74,6 +74,9 @@ create a power point of the following:
     - dataset was not meant for classification, a column for class was required to be added
     - dataset required to be normalized
         - this was solved by using the mean and the standard deviation
+- data analysis 
+    - during the data analysis it can be found that sensor values drop after a certain amount of time, this is an indication that the engines require maintence before failure. 
+    - this can be accomplished during data processing by setting a window during which an engine might need maintence
 
 ## Citations
 A. Saxena and K. Goebel (2008). “Turbofan Engine Degradation Simulation Data Set”, NASA Prognostics Data Repository, NASA Ames Research Center, Moffett Field, CA

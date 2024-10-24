@@ -10,12 +10,12 @@ For easy use of the code, follow the following steps:
         - For more advance use of the code run files individually
 
 - Data Analysis:
-    - run data_analysis.py
+    1. run data_analysis.py
         - creates line graphs for sensors for engines
     - follow the terminal prompt instructions
 
 - Model Training
-    - run train_SVM.py
+    1. run train_SVM.py
   
 ## Part 2
 - Deliver a 5-min demo that includes:
@@ -36,10 +36,26 @@ create a power point of the following:
 5. present preliminary results
 6. write down steps to finalize the project, including improvements, and refinements
 
+### Data Preprocessing
+originally the dataset was composed of text files with values seperated by spaces. 
+during this step:
+- we converted the dataset files into csv files for easier use
+- we normalized the data
+- we generated classification targets for the data to best fit our problem statement
+
 ### Data Analysis Finding
 during the data analysis step, it was found that sensor values drop after a certain amount of time, this is an indication that the engines require maintence before failure. This can be used to determine whether an engine needs maintenance by training the models off the sensors
 
 It was also found that certain sensors are capable of being inversely proportionate to each other, although sensor to sensor influence has not been analyzed.
+
+### Model Training
+- for the SVM model 
+    - the accuracy score resulted in 80%
+    - we went with the following paramters:
+        - trained all 21 sensors
+        - a polynomial kernel
+        - and a Regulation parameter of 1.0
+    - during model training it was found that no matter the number of chosen features, the chosen kernel or the chosen regularization parameter the model would consistenly have an accuracy score of ~ 80%
 
 ### Challenges
 - preprocessing
@@ -53,7 +69,6 @@ It was also found that certain sensors are capable of being inversely proportion
 - model training
     - SVM model
         - no issues
-        - achieves an accuracy score of 80%
 
 ## Citations
 A. Saxena and K. Goebel (2008). “Turbofan Engine Degradation Simulation Data Set”, NASA Prognostics Data Repository, NASA Ames Research Center, Moffett Field, CA

@@ -23,18 +23,20 @@ For easy use of the code, follow the following steps:
     - Data preprocessing steps and any challenges encountered.
     - Preliminary results and any insights gained from the data analysis.
     - Plan for finalizing the project, including potential refinements and improvements.
-
 ### Tasks:
 create a power point of the following:
 1. write a project overview
-2. ~~download data and perform data preprocessing~~
+2. download data and perform data preprocessing
     - write down any challanges found/encountered 
-3. ~~analyze the data to gain any insights~~
+3. analyze the data to gain any insights
     - write down any challanges found/encountered
 4. run initial test with the chosen model
     - write down any challanges found/encountered
 5. present preliminary results
 6. write down steps to finalize the project, including improvements, and refinements
+
+### Project Overview
+our goal for this project was to develop an effective classification system to determine whether an aircraft requires maintenance based on a variety of operational and performance metrics.
 
 ### Data Preprocessing
 originally the dataset was composed of text files with values seperated by spaces. 

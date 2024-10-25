@@ -9,7 +9,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
         for e_num in range(1,max_engines+1):
             try_create_dir(f"Data_Analysis/{file}/engine_{e_num}")
             
-            df[df.ID==e_num][sensor_cols].plot(figsize=(20, 8))
+            df[df.ID==e_num][sensor_cols].plot(figsize=(20, 8),legend=True)
             plt.savefig(f"Data_Analysis/{file}/engine_{e_num}/engine_{e_num}_graph.png")
             plt.close()
 
@@ -22,7 +22,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
             try_create_dir(f"Data_Analysis/{file}/engine_{engine_ID}")
 
             # generate and save graphs
-            df[df.ID==engine_ID][sensor_cols].plot(figsize=(20, 8))
+            df[df.ID==engine_ID][sensor_cols].plot(figsize=(20, 8),legend=True)
             plt.savefig(f"Data_Analysis/{file}/engine_{engine_ID}/engine_{engine_ID}_graph_.png")
             plt.close
 
@@ -34,7 +34,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
                 try_create_dir(f"Data_Analysis/{file}/engine_{i}")
 
                 # generate and save graphs
-                df[df.ID==i][sensor_cols].plot(figsize=(20, 8))
+                df[df.ID==i][sensor_cols].plot(figsize=(20, 8),legend=True)
                 plt.savefig(f"Data_Analysis/{file}/engine_{i}/engine_{i}_graph_.png")
                 plt.close()
     # generate graphs for specific sensors for all engines
@@ -47,7 +47,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
                 try_create_dir(f"Data_Analysis/{file}/engine_{e_num}")
 
                 # generate and save graphs
-                df[df.ID==e_num][sensor_cols[sensor_num]].plot(figsize=(20, 8))
+                df[df.ID==e_num][sensor_cols[sensor_num]].plot(figsize=(20, 8),legend=True)
                 plt.savefig(f"Data_Analysis/{file}/engine_{e_num}/sensor_{sensor_num+1}_graph.png")
                 plt.close()    
         # multiple sensors
@@ -60,7 +60,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
                     i = validate_sensor(i)
 
                     # generate and save graphs
-                    df[df.ID==e_num][sensor_cols[i]].plot(figsize=(20, 8))
+                    df[df.ID==e_num][sensor_cols[i]].plot(figsize=(20, 8),legend=True)
                     plt.savefig(f"Data_Analysis/{file}/engine_{e_num}/sensor_{i+1}_graph.png")
                 plt.close()
 
@@ -76,7 +76,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
             try_create_dir(f"Data_Analysis/{file}/engine_{engine_ID}")
             
             # generate and save graphs
-            df[df.ID==engine_ID][sensor_cols[sensor_num]].plot(figsize=(20, 8))
+            df[df.ID==engine_ID][sensor_cols[sensor_num]].plot(figsize=(20, 8),legend=True)
             plt.savefig(f"Data_Analysis/{file}/engine_{engine_ID}/sensor_{sensor_num+1}_graph.png")
             plt.close()
 
@@ -91,7 +91,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
                 i = validate_sensor(i)
                 
                 # generate
-                df[df.ID==engine_ID][sensor_cols[i]].plot(figsize=(20, 8))
+                df[df.ID==engine_ID][sensor_cols[i]].plot(figsize=(20, 8),legend=True)
                 s+=f"{i+1}_"
 
             # save graphs
@@ -108,7 +108,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
                 validate_engine_ID(i)
                 
                 # generate and save graphs
-                df[df.ID==i][sensor_cols[sensor_num]].plot(figsize=(20, 8))
+                df[df.ID==i][sensor_cols[sensor_num]].plot(figsize=(20, 8),legend=True)
                 plt.savefig(f"Data_Analysis/{file}/engine_{i}/sensor_{sensor_num+1}_graph.png")
                 plt.close()
 
@@ -123,7 +123,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
                 for j in sensor_num:
                     j = validate_sensor(j)
                     
-                    df[df.ID==i][sensor_cols[j]].plot(figsize=(20, 8))
+                    df[df.ID==i][sensor_cols[j]].plot(figsize=(20, 8),legend=True)
                     s += f"{j}_"
                 plt.savefig(f"Data_Analysis/{file}/engine_{i}/sensor_{s}graph.png")
                 plt.close()

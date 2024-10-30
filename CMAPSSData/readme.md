@@ -23,6 +23,17 @@
     - Conditions: SIX 
     - Fault Modes: TWO (HPC Degradation, Fan Degradation)
 
+- Column Names weren't included are the follwing:
+    - unit number
+    - time, in cycles
+    - operational setting 1
+    - operational setting 2
+    - operational setting 3
+    - sensor measurement 1
+    - sensor measurement 2
+    ...
+    - sensor measurement 26
+
 
 
 

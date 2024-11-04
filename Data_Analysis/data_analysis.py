@@ -2,6 +2,11 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
+df = pd.read_csv("Processed_Data/train_FD001.csv")
+sensor_cols = df.columns[5:26]
+max_engines = df['ID'].max()
+file = ""
+
 # get sensor line graph
 def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None|list = None):
     # do all sensors for all engines
@@ -23,7 +28,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
 
             # generate and save graphs
             df[df.ID==engine_ID][sensor_cols].plot(figsize=(20, 8),legend=True)
-            plt.savefig(f"Data_Analysis/{file}/engine_{engine_ID}/engine_{engine_ID}_graph_.png")
+            plt.savefig(f"Data_Analysis/{file}/engine_{engine_ID}/engine_{engine_ID}_graph.png")
             plt.close
 
         # multiple engines
@@ -35,7 +40,7 @@ def get_engine_sensor_linegraph(engine_ID:int|None|list=None,sensor_num:int|None
 
                 # generate and save graphs
                 df[df.ID==i][sensor_cols].plot(figsize=(20, 8),legend=True)
-                plt.savefig(f"Data_Analysis/{file}/engine_{i}/engine_{i}_graph_.png")
+                plt.savefig(f"Data_Analysis/{file}/engine_{i}/engine_{i}_graph.png")
                 plt.close()
     # generate graphs for specific sensors for all engines
     elif engine_ID is None and (type(sensor_num) is int or type(sensor_num) is list):
@@ -158,11 +163,6 @@ def validate_dataset(data):
     if data in data_lst:
         return True
     return False
-
-df = pd.read_csv("Processed_Data/train_FD001.csv")
-sensor_cols = df.columns[5:26]
-max_engines = df['ID'].max()
-file = ""
 if __name__=="__main__":
     file = input("please input dataset i.e, train_FD001, train_FD002, etc... ")
     if validate_dataset(file):

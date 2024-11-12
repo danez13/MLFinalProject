@@ -9,7 +9,7 @@ try:
     os.mkdir("Model_Analysis/Perceptron")
 except:
     pass
-with open("Model_Analysis/SVM/Accuracy.txt","w+") as file:
+with open("Model_Analysis/Perceptron/Accuracy.txt","w+") as file:
     for i in range (1,5):
         train_df = pd.read_csv(f"Processed_Data/train_FD00{i}.csv")
         test_df = pd.read_csv(f"Processed_Data/test_FD00{i}.csv")

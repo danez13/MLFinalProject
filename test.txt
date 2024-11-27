@@ -1,3 +1,0 @@
-learning: invscaling
- hidden layer: (86, 86, 86)
-0.8047495418448382

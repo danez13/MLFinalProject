@@ -32,6 +32,7 @@ print(f"accuracy: {accuracy}")
 cm = confusion_matrix(y_test,y_pred)
 cm_display = ConfusionMatrixDisplay(cm)
 cm_display.plot()
+plt.show()
 
 p = precision_score(y_test,y_pred)
 print(f"precision score: {p}")
